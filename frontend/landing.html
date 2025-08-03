@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>DataDeskAI</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0d141c]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">DataDeskAI</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Features</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Pricing</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3d98f4] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0wlPTBR8OEiEm5T4d27NjTnTsl7N1iu8XztyD6niTZV6T-u4Iwgg9LY7PwcFVd6xErsr3RvObNtVcmOOnbg4a4a8j3C6YN_15LXtddzAXKqhUf9jre_YR0RhZO0x0WQHVBE4o3l_idqg73ICEj2htU-8-0PKpfQDmpMpW9swlMxsabOmSF5iOE_K4q9j0Ty22OXE-zthYad-Kx2V0mBNOxo03Gr6F1cu2tqXScI4AtHkOnhbHEfcJH2uN12CaiNz5pm3xNlm8Yg4");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      From Data To Decisions, Instantly.
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      The AI Analyst That Never Sleeps
+                    </h2>
+                  </div>
+                  <label class="flex flex-col min-w-40 h-14 w-full max-w-[480px] @[480px]:h-16">
+                    <div class="flex w-full max-w-[480px] h-14 @[480px]:h-16">
+                      <div class="flex items-center border border-[#cedbe8] rounded-l-lg bg-slate-50 px-[15px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                          <path
+                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                          ></path>
+                        </svg>
+                      </div>
+
+                      <input
+                        id="promptInput"
+                        placeholder="Enter your prompt"
+                        class="form-input flex-grow min-w-0 resize-none border-t border-b border-[#cedbe8] bg-slate-50 px-3 text-sm text-[#0d141c] placeholder:text-[#49739c] focus:outline-none focus:ring-0"
+                      />
+
+                      <button
+                        id="generateBtn"
+                        class="h-full flex-shrink-0 px-4 bg-[#3d98f4] text-white text-sm font-bold rounded-r-lg"
+                      >
+                        Generate
+                      </button>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#49739c] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#49739c] text-base font-normal leading-normal">@2025 DataDeskAI. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      console.log("Loaded JS");
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.querySelector("input[placeholder='Enter your prompt']");
+      const button = document.getElementById("generateBtn");
+
+      const resultBox = document.createElement("div");
+      resultBox.style.marginTop = "20px";
+      resultBox.style.padding = "10px";
+      resultBox.style.backgroundColor = "#f1f5f9";
+      resultBox.style.border = "1px solid #cbd5e1";
+      resultBox.style.borderRadius = "0.5rem";
+      resultBox.style.fontFamily = "monospace";
+      resultBox.style.whiteSpace = "pre-wrap";
+      input.parentElement.parentElement.appendChild(resultBox);
+
+      button.addEventListener("click", async function () {
+        const prompt = input.value;
+        if (!prompt.trim()) return;
+
+        resultBox.innerHTML = "<em>Processing...</em>";
+
+        try {
+          const response = await fetch("/query", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ prompt })
+          });
+
+          const data = await response.json();
+          resultBox.innerHTML = "";
+          console.log("Response from backend:", data);
+
+          const text = document.createElement("p");
+          text.textContent = data.response || "⚠️ No response text received.";
+          text.style.marginBottom = "10px";
+          text.style.fontSize = "16px";
+          text.style.color = "#0d141c";
+
+          resultBox.appendChild(text);
+
+          if (data.chart_base64) {
+            const img = document.createElement("img");
+            img.src = data.chart_base64;
+            img.style.marginTop = "20px";
+            img.style.maxWidth = "100%";
+            resultBox.appendChild(img);
+          }
+        } catch (error) {
+          resultBox.textContent = "Error: " + error.message;
+        }
+      });
+    });
+    </script>
+  </body>
+</html>
